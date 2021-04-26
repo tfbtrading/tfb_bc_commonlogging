@@ -2,7 +2,7 @@
   "id": "deb3e95e-c9f8-45e2-8036-7eebbbd50049",
   "name": "TFB Common Logging Service",
   "publisher": "TFB Trading",
-  "version": "17.0.1.0",
+  "version": "18.0.0.0",
   "brief": "Provides tables for capturing basic application level tracking of specific auto-emailing functions  ",
   "description": "",
   "privacyStatement": "",
@@ -10,7 +10,7 @@
   "help": "",
   "url": "",
   "logo": "./TFB-Trading-_icon.jpg",
-  "platform": "17.0.0.0",
+  "platform": "18.0.0.0",
   "dependencies": [
     
   ],
@@ -23,5 +23,5 @@
   ],
   "contextSensitiveHelpUrl": "https://ALProject1.com/help/",
   "showMyCode": true,
-  "runtime": "6.0"
+  "runtime": "7.0"
 }
