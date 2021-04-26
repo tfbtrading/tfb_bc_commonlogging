@@ -1,3 +1,6 @@
+/// <summary>
+/// Table TFB Communication Entry (ID 53000).
+/// </summary>
 table 53000 "TFB Communication Entry"
 {
     DataClassification = CustomerContent;
