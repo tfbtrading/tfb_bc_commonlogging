@@ -123,8 +123,8 @@ table 53000 "TFB Communication Entry"
         CommEntry.SetRange("Record No.", RecNo);
         CommEntry.SetRange("Record Type", RecType);
         CommEntry.SetRange(Direction, Direction);
-
-        if CommEntry.FindSet(false, false) then
+        CommEntry.LoadFields(SentTimeStamp);
+        if CommEntry.FindFirst() then
             Exit(CommEntry.SentTimeStamp)
 
         else
