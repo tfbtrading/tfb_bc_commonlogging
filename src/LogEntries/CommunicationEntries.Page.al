@@ -7,10 +7,9 @@ page 53020 "TFB Communication Entries"
     Caption = 'Communication Entries';
     ApplicationArea = All;
     UsageCategory = History;
-  
-    ObsoleteState = Pending;
-    ObsoleteTag = 'CommunicationEntry';
-    ObsoleteReason = 'Needs to be replaced by standard interaction records';
+    InsertAllowed = false;
+    ModifyAllowed = false;
+    Editable = false;
 
     layout
     {

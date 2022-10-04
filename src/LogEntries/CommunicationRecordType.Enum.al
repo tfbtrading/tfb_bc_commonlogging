@@ -1,10 +1,8 @@
 enum 53030 "TFB Communication Record Type"
 {
     Extensible = true;
-      
-    ObsoleteState = Pending;
-    ObsoleteTag = 'CommunicationEntry';
-    ObsoleteReason = 'Needs to be replaced by standard interaction records';
+
+
 
 
     value(0; SOC)
