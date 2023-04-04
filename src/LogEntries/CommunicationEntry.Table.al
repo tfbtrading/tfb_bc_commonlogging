@@ -4,9 +4,7 @@
 table 53000 "TFB Communication Entry"
 {
     DataClassification = CustomerContent;
-    ObsoleteState = Pending;
-    ObsoleteTag = 'CommunicationEntry';
-    ObsoleteReason = 'Needs to be replaced by standard interaction records';
+
 
     fields
     {
@@ -110,22 +108,22 @@ table 53000 "TFB Communication Entry"
     /// <param name="CommMethod">Parameter of type Enum "TFB Communication Method".</param>
     /// <param name="RecType">Parameter of type Option.</param>
     /// <param name="RecNo">Parameter of type Code[20].</param>
-    /// <param name="Direction">Parameter of type enum "TFB Communication Direction".</param>
+    /// <param name="DirectionParam">Parameter of type enum "TFB Communication Direction".</param>
     /// <param name="SourceType">Parameter of type Enum "TFB Source Type".</param>
     /// <param name="SourceID">Parameter of type Code[20].</param>
     /// <returns>Return variable "DateTime".</returns>
-    procedure CheckPriorEntryDateTime(CommMethod: Enum "TFB Communication Method"; RecType: Option; RecNo: Code[20]; Direction: enum "TFB Communication Direction"; SourceType: Enum "TFB Source Type"; SourceID: Code[20]): DateTime
+    procedure CheckPriorEntryDateTime(CommMethod: Enum "TFB Communication Method"; RecType: Option; RecNo: Code[20]; DirectionParam: enum "TFB Communication Direction"; SourceType: Enum "TFB Source Type"; SourceID: Code[20]): DateTime
 
     var
-        CommEntry: Record "TFB Communication Entry";
+        CommunicationEntry: Record "TFB Communication Entry";
 
     begin
-        CommEntry.SetRange("Record No.", RecNo);
-        CommEntry.SetRange("Record Type", RecType);
-        CommEntry.SetRange(Direction, Direction);
-        CommEntry.LoadFields(SentTimeStamp);
-        if CommEntry.FindFirst() then
-            Exit(CommEntry.SentTimeStamp)
+        CommunicationEntry.SetRange("Record No.", RecNo);
+        CommunicationEntry.SetRange("Record Type", RecType);
+        CommunicationEntry.SetRange(Direction, DirectionParam);
+        CommunicationEntry.LoadFields(SentTimeStamp);
+        if CommunicationEntry.FindFirst() then
+            Exit(CommunicationEntry.SentTimeStamp)
 
         else
             Exit(0DT);
