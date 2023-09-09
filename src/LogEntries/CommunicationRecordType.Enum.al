@@ -1,7 +1,8 @@
 enum 53030 "TFB Communication Record Type"
 {
     Extensible = true;
-
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Moved to core extension';
 
 
 

@@ -2,7 +2,7 @@
   "id": "deb3e95e-c9f8-45e2-8036-7eebbbd50049",
   "name": "TFB Common Logging Service",
   "publisher": "TFB Trading",
-  "version": "22.0.0.0",
+  "version": "22.0.0.1",
   "brief": "Provides tables for capturing basic application level tracking of specific auto-emailing functions  ",
   "description": "",
   "privacyStatement": "",

@@ -4,7 +4,8 @@
 table 53000 "TFB Communication Entry"
 {
     DataClassification = CustomerContent;
-
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Moved to core extension';
 
     fields
     {

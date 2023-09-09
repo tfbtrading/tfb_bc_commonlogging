@@ -10,6 +10,8 @@ page 53020 "TFB Communication Entries"
     InsertAllowed = false;
     ModifyAllowed = false;
     Editable = false;
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Moved to core extension';
 
     layout
     {

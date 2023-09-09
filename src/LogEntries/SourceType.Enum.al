@@ -1,10 +1,8 @@
 enum 53050 "TFB Source Type"
 {
-    Extensible = false;
-
-
-
-
+    Extensible = true;
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Moved to core extension';
     value(10; Customer)
     {
     }

@@ -1,7 +1,8 @@
 enum 53020 "TFB Communication Method"
 {
     Extensible = false;
- 
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Moved to core extension';
     value(0; EDI)
     {
 
